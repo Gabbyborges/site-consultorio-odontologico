@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Consultório especializado em ortodontia com mais de 30 anos de experiência, oferecendo tratamentos personalizados com aparelhos fixos, móveis e alinhadores.">
+
+    <script src="menu.js" defer></script>
+    <script src="toggle.js" defer></script>
+    
+    <title>Consultório Ortodontia São Carlos - SP</title>
+</head>
+<body>
+    <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=16991805512" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png">
+                </a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Quem somos</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="https://wa.me/5516991805512">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cursos">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    <!-- NEW SECTION FOR FACHADA IMAGE -->
+    <section id="fachada" class="fachada-section">
+        <div class="interface">
+            <img src="images/fachada.jpg" alt="Fachada da Clínica" class="fachada-img">
+        </div>
+    </section>
+
+    <main>
+        <section id="inicio" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>SOMOS UMA EQUIPE DE ESPECIALISTAS EM SORRISOS SAUDÁVEIS<span>.</span></h1>
+                        <p>Descubra como transformar seu sorriso com especialistas em ortodontia, utilizando os mais avançados aparelhos fixos, móveis e alinhadores, para conquistar o sorriso dos seus sonhos.</p>
+
+                        <div class="btn-contato">
+                            <a href="https://wa.me/5516991805512">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="images/img.jpg" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section id="especialidades" class="especiliadades">
+            <div class="interface">
+                <h2 class="titulo">COMO TRANSFORMAMOS <span>SEU SORRISO.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-arrow-down-right-circle"></i>
+                        <h3>Aparelhos fixos</h3>
+                        <p>O aparelho fixo corrige a posição dos dentes e a mordida por meio de bráquetes, fios e elásticos, proporcionando um sorriso mais alinhado e funcional.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-arrow-down-right-circle"></i>
+                        <h3>Aparelhos móveis</h3>
+                        <p>O aparelho móvel é usado antes da correção ortodôntica para preparar os dentes e alinhar a arcada dentária. E também após a correção ortodôntica ajudando a preservar o alinhamento dos dentes.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-arrow-down-right-circle"></i>
+                        <h3>Alinhadores</h3>
+                        <p>Os alinhadores são utilizados para corrigir problemas ortodônticos, como o alinhamento dos dentes e a mordida, proporcionando uma opção discreta e removível para tratamento.</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especiliadades-->
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="perfil">
+                        <img src="images/imgdrasozinha.jpg" alt="Dra. Adriana Ramos">
+                        <a href="curriculo.html">
+                            <button class="btn-mais">Saiba mais!</button>
+                        </a>
+                        <p id="desc1" class="descricao" style="display: none;"></p>
+                    </div>
+                    <div class="perfil">
+                        <img src="images/imgdrsozinho.jpg" alt="Dr. Lincoln Ramos">
+                        <a href="curriculo2.html">
+                            <button class="btn-mais">Saiba mais!</button>
+                        </a>
+                    </div>
+        
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>PROF DR. LINCOLN RAMOS E PROFA DRA. ADRIANA RAMOS.</span></h2>
+                        <p>Somos especialistas em ortodontia há mais de 30 anos, dedicando-nos a proporcionar sorrisos saudáveis e bonitos aos nossos pacientes. Nossa equipe altamente qualificada e experiente está aqui para oferecer tratamentos personalizados, utilizando as melhores técnicas para garantir resultados eficazes.</p>
+                        <p>Com especialização em aparelhos fixos, móveis e alinhadores, nossa equipe está comprometida em oferecer soluções personalizadas. Conte conosco.</p>
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/instituto.deodontologia?igsh=MTI5bXN3MGcwNmZjYw=="><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://wa.me/message/CISKC6PIDPVGA1"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="https://maps.app.goo.gl/xd9CGQyGCGHMnZs38"><button><i class="bi bi-geo-fill"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+        
+
+        <section id="cursos" class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">NOSSOS <span>CURSOS.</span></h2>
+                <div class="flex">
+                    <a href="https://wa.me/message/NZ42WAJ2CEBEM1" class="img-port" style="background-image: url(images/alinhadores.jpg);">
+                        <div class="overlay">Clique para saber mais!</div>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=351966967234" class="img-port" style="background-image: url(images/dobrasealças.jpg);">
+                        <div class="overlay">Clique para saber mais!</div>
+                    </a>
+                    <a href="https://wa.me/message/NZ42WAJ2CEBEM1" class="img-port" style="background-image: url(images/mini.png);">
+                        <div class="overlay">Clique para saber mais!</div>
+                    </a>
+                    <a href="https://ortodontiasemsegredos.com.br/pv/" class="img-port" style="background-image: url(images/bio.png);">
+                        <div class="overlay">Clique para saber mais!</div>
+                    </a>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+        
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="Logotipo Ins">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/instituto.deodontologia?igsh=MTI5bXN3MGcwNmZjYw=="><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://wa.me/message/CISKC6PIDPVGA1"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="https://maps.app.goo.gl/xd9CGQyGCGHMnZs38"><button><i class="bi bi-geo-fill"></i></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="confirmaconsulta@hotmail.com">confirmaconsulta@hotmail.com</a></p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
+
+</body>
+</html>

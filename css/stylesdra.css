@@ -1,0 +1,94 @@
+/* CSS existente */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4e4e4;
+}
+
+.curriculo-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px;
+    background-color: #e4e4e4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-container {
+    flex: 1;
+    max-width: 350px;
+    margin-right: 20px;
+}
+
+.foto-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    border: 2px solid #333;
+}
+
+.texto-curriculo {
+    flex: 2;
+}
+
+.texto-curriculo h2 {
+    margin-bottom: 35px;
+    color: #333;
+    margin-left: 35px;
+    font-size: 2.5vw; /* Ajusta o tamanho do título */
+}
+
+.texto-curriculo p {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.5vw; /* Ajusta o tamanho do texto */
+}
+
+.texto-curriculo p::before {
+    content: "➤";
+    position: absolute;
+    left: 0;
+    color: #6e6d6d;
+}
+
+/* Ajuste para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    .curriculo-container {
+        margin: 5px;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .foto-container {
+        margin-right: 0;
+        margin-bottom: 15px; /* Adiciona espaçamento entre a imagem e o texto */
+    }
+
+    .foto-container img {
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .texto-curriculo h2 {
+        font-size: 5vw; /* Título responsivo */
+        margin-left: 0; /* Centraliza o título */
+        text-align: center;
+    }
+
+    .texto-curriculo p {
+        font-size: 4vw; /* Texto responsivo */
+        margin-left: 0; /* Centraliza o texto */
+        padding-left: 0; /* Remove o espaçamento à esquerda */
+    }
+
+    .texto-curriculo p::before {
+        left: -15px; /* Ajusta a posição do marcador */
+    }
+}
